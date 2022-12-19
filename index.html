@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+	<main>
+		<div class="grid">
+			<div class="output">
+				<span data-previous-operand>0</span>
+				<span data-current-operation></span>
+				<span data-current-operand></span>
+			</div>
+			<button data-ac class="controls">AC</button>
+			<button data-plus-minus class="controls">+/-</button>
+			<button data-percent class="controls">%</button>
+			<button data-operation class="operation">/</button>
+
+			<button data-number class="number">7</button>
+			<button data-number class="number">8</button>
+			<button data-number class="number">9</button>
+			<button data-operation class="operation">*</button>
+
+			<button data-number class="number">4</button>
+			<button data-number class="number">5</button>
+			<button data-number class="number">6</button>
+			<button data-operation class="operation">-</button>
+
+			<button data-number class="number">1</button>
+			<button data-number class="number">2</button>
+			<button data-number class="number">3</button>
+			<button data-operation class="operation">+</button>
+
+			<button data-number class="number span-2">0</button>
+			<button data-number class="number">.</button>
+			<button data-equals class="operation">=</button>
+		</div>
+	</main>
+</body>
+</html>

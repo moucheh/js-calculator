@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Lato, sans-serif;
+	background-color: black;
+}
+
+main {
+	max-width: 960px;
+	margin-inline: auto;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: .5rem;
+}
+
+.span-2 {
+	grid-column: span 2;
+	width: 200px;
+	border-radius: 100vw;
+}
+
+.output {
+	grid-column: span 4;
+	max-width: 350px;
+	min-height: 200px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	color: white;
+	font-size: 4em;
+	padding: 2rem;
+	word-break: break-word;
+	flex-grow: 1;
+}
+
+button {
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	border: 0;
+	border-radius: 50%;
+	font-size: 3rem;
+	transition: 
+		background-color 200ms ease-in,
+		color 200ms ease-in;
+}
+
+button:hover {
+	background-color: white;
+	color: black;
+}
+
+.controls {
+	background-color: #777;
+	color: black;
+}
+
+.number {
+	background-color: #111;
+	color: white;
+}
+
+.operation {
+	background-color: orange;
+	color: white;
+}
+
